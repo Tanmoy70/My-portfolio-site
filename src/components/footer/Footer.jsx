@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer_container container">
         <h1 className="footer_title">Tanmoy</h1>
 
-        <ul className="footer_list">
+        {/* <ul className="footer_list">
           <li>
             <a href="#about" className="footer_link">
               About
@@ -23,7 +23,7 @@ export default function Footer() {
               Skills
             </a>
           </li>
-        </ul>
+        </ul> */}
 
         <div className="footer_social">
           <a
@@ -49,9 +49,26 @@ export default function Footer() {
           >
             <i class="bx bxl-twitter"></i>
           </a>
+
+           <a
+            href="https://www.facebook.com/tanmoy.kanrar.573805"
+            className="footer_social-link"
+            target="_blank"
+          >
+            <i class="bx bxl-facebook"></i>
+          </a>
+
+
+           <a
+            href="https://www.instagram.com/tanmoy_kanrar01/"
+            className="footer_social-link"
+            target="_blank"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
         </div>
         <span className="footer_copy">
-          &#169; TanmoyKanrar. All rights reserved
+          &#169;2025 TanmoyKanrar. All rights reserved
         </span>
       </div>
     </footer>
