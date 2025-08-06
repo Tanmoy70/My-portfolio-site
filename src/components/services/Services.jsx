@@ -12,7 +12,7 @@ export default function Services() {
   };
 
   return (
-    <section className="services section" id="services">
+    <section className="services section" id="certificates">
       <h2 className="section_title">Certificates</h2>
       <span className="section_subtitle">What I achieve</span>
 
