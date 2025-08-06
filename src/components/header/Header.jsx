@@ -6,6 +6,7 @@ const navItems = [
   { href: "#home", icon: "uil-estate", title: "Home" },
   { href: "#about", icon: "uil-user", title: "About" },
   { href: "#skills", icon: "uil-file-alt", title: "Skills" },
+  { href: "#certificates", icon: "uil-message", title: "Certificates" },
   { href: "#qualification", icon: "uil-scenery", title: "Qualification" },
   { href: "#portfolio", icon: "uil-scenery", title: "Portfolio" },
   { href: "#contact", icon: "uil-message", title: "Contact" },
