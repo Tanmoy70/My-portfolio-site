@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import Certificate1 from "./../../assets/Prompt-Engineering.jpeg";
+import Certificate2 from "./../../assets/aws.jpeg";
+import Certificate3 from "./../../assets/web-dev.jpeg";
 import "./services.css";
 
 export default function Services() {
@@ -10,19 +13,22 @@ export default function Services() {
 
   return (
     <section className="services section" id="services">
-      <h2 className="section_title">Services</h2>
-      <span className="section_subtitle">What i offer</span>
+      <h2 className="section_title">Certificates</h2>
+      <span className="section_subtitle">What I achieve</span>
 
       <div className="services_container container grid">
         <div className="services_content">
           <div>
-            <i className="uil uil-web-grid services_icon"></i>
+            <img src={Certificate1} alt="Product Designer" className="services_img" />
+            {/* <i className="uil uil-web-grid services_icon"></i> */}
             <h3 className="services_title">
-              Product <br /> Designer
+              ChatGPT Prompt Engineering for Developers <br/>
+              <span className="services_title-line">from DeepLearning.AI</span>
             </h3>
           </div>
-          <span className="services_button" onClick={() => toggleTab(1)}>
-            View More
+          <span className="services_button"> {/*onClick={() => toggleTab(1)*/}
+            <a href="https://learn.deeplearning.ai/accomplishments/04719f6e-b81b-48a9-a3eb-61ad8f2e9b62" style={{ color: "inherit", textDecoration: "none" }}>View Now</a>
+
             <i className="uil uil-arrow-right services_button-icon"></i>
           </span>
           <div
@@ -82,13 +88,15 @@ export default function Services() {
 
         <div className="services_content">
           <div>
-            <i className="uil uil-arrow services_icon"></i>
+            <img src={Certificate2} alt="Product Designer" className="services_img" />
+            {/* <i className="uil uil-arrow services_icon"></i> */}
             <h3 className="services_title">
-              UI/UX <br /> Designer
+              Ultimate AWS Certified Solutions Architect Associate SAA-C03 <br/>
+              <span className="services_title-line">from Udemy</span>
             </h3>
           </div>
-          <span onClick={() => toggleTab(2)} className="services_button">
-            View More
+          <span className="services_button"> {/*onClick={() => toggleTab(2)}*/}
+            <a href="https://www.udemy.com/certificate/UC-9ea3529e-0f05-4e0c-94ad-e714dacfb9ed/" style={{ color: "inherit", textDecoration: "none" }}>View Now</a>
             <i className="uil uil-arrow-right services_button-icon"></i>
           </span>
           <div
@@ -148,15 +156,17 @@ export default function Services() {
 
         <div className="services_content">
           <div>
-            <i className="uil uil-edit services_icon"></i>
+            <img src={Certificate3} alt="Product Designer" className="services_img" />
+            {/* <i className="uil uil-edit services_icon"></i> */}
             <h3 className="services_title">
-              Visual <br /> Designer
+              The Complete 2023 Web Development Bootcamp <br/>
+              <span className="services_title-line">from Udemy</span>
             </h3>
           </div>
-          <span onClick={() => toggleTab(3)} className="services_button">
-            View More
+           <span className="services_button"> {/*onClick={() => toggleTab(3)}*/}
+            <a href="https://www.udemy.com/certificate/UC-d5113239-5102-472f-aab5-97671f743d1a/" style={{ color: "inherit", textDecoration: "none" }}>View Now</a>
             <i className="uil uil-arrow-right services_button-icon"></i>
-          </span>
+          </span> 
           <div
             className={
               toggleState === 3
