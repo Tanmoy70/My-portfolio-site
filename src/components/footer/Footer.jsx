@@ -35,7 +35,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/tanmoykanrar70/"
+            href="https://www.linkedin.com/in/tanmoykanrar/"
             className="footer_social-link"
             target="_blank"
           >
@@ -60,7 +60,7 @@ export default function Footer() {
 
 
            <a
-            href="https://www.instagram.com/tanmoy_kanrar01/"
+            href="https://www.instagram.com/tanmoykanrar.official/"
             className="footer_social-link"
             target="_blank"
           >
