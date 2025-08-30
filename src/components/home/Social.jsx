@@ -9,7 +9,7 @@ export default function Social() {
         <i class="uil uil-github-alt"></i>
       </a>
 
-      <a href="https://www.linkedin.com/in/tanmoykanrar70/" className="home_social-icon" target="_blank">
+      <a href="https://www.linkedin.com/in/tanmoykanrar/" className="home_social-icon" target="_blank">
         <i class="bx bxl-linkedin"></i>
       </a>
 
