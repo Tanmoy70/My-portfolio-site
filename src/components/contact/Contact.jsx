@@ -27,10 +27,10 @@ export default function Contact() {
             <div className="contact_card">
               <i className="bx bx-mail-send contact_card-icon"></i>
               <h3 className="contact_card-title">Email</h3>
-              <span className="contact_card-data">tk705951@gmail.com </span>
+              <span className="contact_card-data">tanmoykanrar.official@gmail.com</span>
 
               <a
-                href="mailto:tk705951@gmail.com"
+                href="mailto:tanmoykanrar.official@gmail.com"
                 className="contact_button"
               >
                 Write me
