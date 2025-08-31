@@ -1,4 +1,4 @@
-import "./home.css";
+import "./style/home.css";
 import Data from "./Data";
 import Social from "./Social";
 import ScrollDown from "./ScrollDown";
