@@ -1,17 +1,35 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 
 export default function Contact() {
   const form = useRef();
+  const [showThankYou, setShowThankYou] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_lrdn34j", "template_jbu0qpn", form.current, {
-      publicKey: "nL1phBLrCuoyDx5DL",
-    });
-    e.target.reset();
+    emailjs
+      .sendForm("service_lrdn34j", "template_4s2hgwh", form.current, { //using template 1 on email js
+        publicKey: "nL1phBLrCuoyDx5DL",
+      })
+      .then(
+        () => {
+          // Show thank you message
+          setShowThankYou(true);
+          e.target.reset();
+          
+          // Hide thank you message after 5 seconds
+          setTimeout(() => {
+            setShowThankYou(false);
+          }, 5000);
+        },
+        
+        (error) => {
+          console.log("FAILED...", error.text);
+          alert("Failed to send message. Please try again.");
+        }
+      );
   };
 
   return (
@@ -68,46 +86,65 @@ export default function Contact() {
         <div className="contact_content">
           <h3 className="contact_title">Write me your thought</h3>
 
+          {/* Thank You Message */}
+          {showThankYou && (
+            <div className="thank_you_message">
+              <div className="thank_you_content">
+                <i className="bx bx-check-circle thank_you_icon"></i>
+                <h3 className="thank_you_title">Thank You!</h3>
+                <p className="thank_you_text">
+                  Your message has been sent successfully. I'll get back to you soon!
+                </p>
+              </div>
+            </div>
+          )}
+
           <form ref={form} onSubmit={sendEmail} className="contact_form">
             <div className="contact_form-div">
-              <label htmlFor="" className="contact_form-tag">
+              <label htmlFor="name" className="contact_form-tag">
                 Name
               </label>
               <input
                 type="text"
                 name="name"
+                id="name"
                 className="contact_form-input"
                 placeholder="Insert your name"
+                required
               />
             </div>
 
             <div className="contact_form-div">
-              <label htmlFor="" className="contact_form-tag">
+              <label htmlFor="email" className="contact_form-tag">
                 Email
               </label>
               <input
                 type="email"
                 name="email"
+                id="email"
                 className="contact_form-input"
                 placeholder="Insert your email"
+                required
               />
             </div>
 
             <div className="contact_form-div contact_form-area">
-              <label className="contact_form-tag">Message</label>
+              <label htmlFor="project" className="contact_form-tag">Message</label>
               <textarea
                 name="project"
+                id="project"
                 cols="30"
                 rows="10"
                 className="contact_form-input"
                 placeholder="Write your message"
+                required
               ></textarea>
             </div>
 
-            <button className="button button--flex">
-              Send Massege
+            <button type="submit" className="button button--flex">
+              Send Message
               <svg
-                class="button__icon"
+                className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"

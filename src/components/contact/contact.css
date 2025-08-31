@@ -107,6 +107,91 @@
   resize: none;
 }
 
+/* Thank You Message Styles */
+.thank_you_message {
+  position: fixed;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  animation: slideInScale 0.5s ease-out;
+  min-width: 300px;
+  text-align: center;
+}
+
+.thank_you_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.thank_you_icon {
+  font-size: 2rem;
+  color: var(--title-color);
+  animation: bounceIn 0.6s ease-out 0.2s both;
+  margin-bottom: var(--mb-0-25);
+}
+
+.thank_you_title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+  margin: 0;
+  margin-bottom: var(--mb-0-75);
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+
+.thank_you_text {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.6;
+  animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+
+/* Animations */
+@keyframes slideInScale {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /*================ BREAKPOINTS ================*/
 /* FOR LARGE DEVICE */
 @media screen and (max-width: 992px) {
@@ -129,6 +214,18 @@
   .contact_form {
     margin: 0 auto;
   }
+
+  /* Thank you message responsive */
+  .thank_you_message {
+    margin: 0 1rem;
+    min-width: auto;
+    max-width: 90vw;
+    padding: 1.5rem;
+  }
+  
+  .thank_you_icon {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -139,9 +236,30 @@
   .contact_form {
     width: 100%;
   }
+
+  /* Thank you message for small screens */
+  .thank_you_message {
+    padding: 1rem;
+    /* max-width: 95vw; */
+    width: 80vw;
+  }
+  
+  .thank_you_content {
+    gap: 0.75rem;
+  }
 }
 
 /* For small devices */
-
 @media screen and (max-width: 350px) {
+  .thank_you_message {
+    padding: 0.75rem;
+  }
+  
+  .thank_you_title {
+    font-size: var(--normal-font-size);
+  }
+  
+  .thank_you_text {
+    font-size: var(--smaller-font-size);
+  }
 }
