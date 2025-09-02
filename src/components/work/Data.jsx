@@ -6,6 +6,7 @@ import Work5 from "../../assets/HypeU.png";
 import Work6 from "../../assets/fine_desin.png";
 import Work7 from "../../assets/royalty_events.png";
 import Work8 from "../../assets/pwr_us.png";
+import Work9 from "../../assets/Emnipatiopr.png";
 
 export const projectsData = [
   {
@@ -40,7 +41,7 @@ export const projectsData = [
     id: 5,
     image: Work5,
     title: "HypeU (Frontend Development)",
-    link: "index.html",
+    link: "https://hypeu.io/",
     catagory: "Web",
   },
   {
@@ -62,6 +63,13 @@ export const projectsData = [
     image: Work8,
     title: "pwrretirementgroup.us",
     link: "https://pwrretirementgroup.us",
+    catagory: "Wordpress",
+  },
+   {
+    id: 9,
+    image: Work9,
+    title: "enmipatiopr.com",
+    link: "https://enmipatiopr.com/",
     catagory: "Wordpress",
   },
 ];
