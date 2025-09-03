@@ -1,4 +1,4 @@
-import "./style/home.css"; //this location is changed as now home.css located under style folder
+import "./style/home.css"; 
 import Data from "./Data";
 import Social from "./Social";
 import ScrollDown from "./ScrollDown";
