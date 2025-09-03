@@ -86,7 +86,7 @@ export default function Contact() {
         <div className="contact_content">
           <h3 className="contact_title">Write me your thought</h3>
 
-          {/* Thank You Message */}
+         
           {showThankYou && (
             <div className="thank_you_message">
               <div className="thank_you_content">
@@ -109,7 +109,7 @@ export default function Contact() {
                 name="name"
                 id="name"
                 className="contact_form-input"
-                placeholder="Insert your name"
+                placeholder="Your Name"
                 required
               />
             </div>
@@ -123,7 +123,7 @@ export default function Contact() {
                 name="email"
                 id="email"
                 className="contact_form-input"
-                placeholder="Insert your email"
+                placeholder="Your Email"
                 required
               />
             </div>
