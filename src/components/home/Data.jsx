@@ -47,10 +47,7 @@ export default function Data() {
       </div>
 
       <p className="home_description">
-        I'm a MERN stack developer with one year of hands-on experience in
-        building dynamic and responsive web applications. I’m passionate about
-        crafting efficient, scalable solutions and continuously enhancing my
-        skill set.
+        MERN stack developer with 1+ years of hands-on experience building dynamic, responsive web applications. Passionate about crafting efficient, scalable solutions while continuously expanding technical expertise.
       </p>
 
       <a href="#contact" className="button button--flex">
