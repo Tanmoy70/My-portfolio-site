@@ -33,15 +33,15 @@ export default function Works() {
       <div className="work_filters">
         {projectsNav.map((item, index) => {
           return (
-            <span
+            <button
               onClick={(e) => {
                 handleClick(e, index);
               }}
               className={`${active === index ? "active-work" : ""} work_item`}
               key={index}
             >
-              {item.name}
-            </span>
+              <span className="work_item_name">{item.name}</span>
+            </button>
           );
         })}
       </div>
