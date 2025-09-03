@@ -164,7 +164,7 @@ export default function Qualification() {
           >
             <div className="qualification_data">
               <div>
-                <h3 className="qualification_title">Full Stack MERN Developer</h3>
+                <h3 className="qualification_title">MERN Developer</h3>
                 <span className="qualification_subtitle">
                   Webgen Technologies Pvt. Ltd.
                 </span>
