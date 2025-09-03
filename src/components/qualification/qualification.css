@@ -5,19 +5,23 @@
 .qualification_tabs {
   display: flex;
   justify-content: center;
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-3);
 }
 
 .qualification_button {
-  font-size: var(--h3-font-size);
+  font-size: var(--h4-font-size);
   font-weight: var(--font-medium);
   color: var(--title-color);
   margin: 0 var(--mb-1);
-  cursor: pointer;
+  cursor: pointer;;
+  padding: .25rem 1rem;
+  border-radius: 10px;
 }
 
 .qualification_button:hover {
-  color: var(--title-color-dark);
+  background-color: var(--title-color);
+  color: var(--container-color);
+  transition: .3s ease-in-out;
 }
 
 .qualification_icon {
@@ -26,7 +30,8 @@
 }
 
 .qualification_active {
-  color: var(--title-color-dark);
+  background-color: var(--title-color);
+  color: var(--container-color);
 }
 
 .qualification_sections {
@@ -58,12 +63,19 @@
 .qualification_subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-0-5);
 }
 
 .qualification_calender {
   font-size: var(--small-font-size);
 }
+
+.qualification_grade {
+  display: inline-block; /* or block */
+  color: rgb(66, 66, 66);
+  margin-bottom: var(--mb-0-5);
+}
+
 
 .qualification_rounder {
   display: inline-block;
@@ -104,6 +116,7 @@
   }
 
   .qualification_button {
+    padding: 0px 1rem;
     margin: 0 var(--mb-0-75);
   }
 }
