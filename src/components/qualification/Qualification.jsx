@@ -119,7 +119,7 @@ export default function Qualification() {
               </div>
               <div>
                 <h3 className="qualification_title">
-                  Secondary Certificate Program
+                  Secondary Certificate
                 </h3>
                 <span className="qualification_subtitle">
                   Prasastha Durlav Chandra Saha Vidyapith
