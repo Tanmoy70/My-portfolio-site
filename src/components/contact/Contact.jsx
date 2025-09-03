@@ -10,7 +10,8 @@ export default function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_lrdn34j", "template_4s2hgwh", form.current, { //using template 1 on email js
+      .sendForm("service_lrdn34j", "template_4s2hgwh", form.current, {
+        //using template 1 on email js
         publicKey: "nL1phBLrCuoyDx5DL",
       })
       .then(
@@ -18,13 +19,13 @@ export default function Contact() {
           // Show thank you message
           setShowThankYou(true);
           e.target.reset();
-          
+
           // Hide thank you message after 5 seconds
           setTimeout(() => {
             setShowThankYou(false);
           }, 5000);
         },
-        
+
         (error) => {
           console.log("FAILED...", error.text);
           alert("Failed to send message. Please try again.");
@@ -45,7 +46,9 @@ export default function Contact() {
             <div className="contact_card">
               <i className="bx bx-mail-send contact_card-icon"></i>
               <h3 className="contact_card-title">Email</h3>
-              <span className="contact_card-data">tanmoykanrar.official@gmail.com</span>
+              <span className="contact_card-data">
+                tanmoykanrar.official@gmail.com
+              </span>
 
               <a
                 href="mailto:tanmoykanrar.official@gmail.com"
@@ -62,11 +65,13 @@ export default function Contact() {
               <span className="contact_card-data">91+ 7059518947</span>
 
               <a
-                href="https://api.whatsapp.com/send?phone=7059518947&text=Hello, more information!"
+                href="https://wa.me/917059518947?text=Hallo%2C%20how%20are%20you?"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="contact_button"
               >
                 Write me
-                <i className="bx bx-right-arrow-alt conatct_button-icon"></i>
+                <i className="bx bx-right-arrow-alt contact_button-icon"></i>
               </a>
             </div>
 
@@ -75,7 +80,10 @@ export default function Contact() {
               <h3 className="contact_card-title">Linkedin</h3>
               <span className="contact_card-data">tanmoykanrar</span>
 
-              <a href="https://www.linkedin.com/in/tanmoykanrar/" className="contact_button">
+              <a
+                href="https://www.linkedin.com/in/tanmoykanrar/"
+                className="contact_button"
+              >
                 Write me
                 <i className="bx bx-right-arrow-alt conatct_button-icon"></i>
               </a>
@@ -86,14 +94,14 @@ export default function Contact() {
         <div className="contact_content">
           <h3 className="contact_title">Write me your thought</h3>
 
-         
           {showThankYou && (
             <div className="thank_you_message">
               <div className="thank_you_content">
                 <i className="bx bx-check-circle thank_you_icon"></i>
                 <h3 className="thank_you_title">Thank You!</h3>
                 <p className="thank_you_text">
-                  Your message has been sent successfully. I'll get back to you soon!
+                  Your message has been sent successfully. I'll get back to you
+                  soon!
                 </p>
               </div>
             </div>
@@ -129,7 +137,9 @@ export default function Contact() {
             </div>
 
             <div className="contact_form-div contact_form-area">
-              <label htmlFor="project" className="contact_form-tag">Message</label>
+              <label htmlFor="project" className="contact_form-tag">
+                Message
+              </label>
               <textarea
                 name="project"
                 id="project"
