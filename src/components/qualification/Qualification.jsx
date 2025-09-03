@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./qualification.css";
 
 export default function Qualification() {
@@ -11,11 +11,11 @@ export default function Qualification() {
   return (
     <section id="qualification" className="qualification section">
       <h2 className="section_title">Qualification</h2>
-      <span className="section_subtitle">My prosonal journey</span>
+      <span className="section_subtitle">My personal journey</span>
 
       <div className="qualification_container container">
         <div className="qualification_tabs">
-          <div
+          <button
             className={
               toggleState === 1
                 ? "qualification_button qualification_active button--flex"
@@ -25,9 +25,9 @@ export default function Qualification() {
           >
             <i className="uil uil-graduation-cap qualification_icon"></i>
             Education
-          </div>
+          </button>
 
-          <div
+          <button
             className={
               toggleState === 2
                 ? "qualification_button qualification_active button--flex"
@@ -37,7 +37,7 @@ export default function Qualification() {
           >
             <i className="uil uil-briefcase-alt qualification_icon"></i>
             Experience
-          </div>
+          </button>
         </div>
 
         <div className="qualification_sections">
@@ -57,6 +57,7 @@ export default function Qualification() {
                   Seacom Engineering Collge
                 </span>
                 <div className="qualification_calender">
+                  <span className="qualification_grade">Grade: Pursuing</span><br/>
                   <i className="uil uil-calendar-alt"></i> 2024 - 2026
                 </div>
               </div>
@@ -83,6 +84,7 @@ export default function Qualification() {
                   Seacom Management Collge
                 </span>
                 <div className="qualification_calender">
+                  <span className="qualification_grade">Grade: 8.80 CGPA</span><br/>
                   <i className="uil uil-calendar-alt"></i> 2021 - 2024
                 </div>
               </div>
@@ -97,6 +99,7 @@ export default function Qualification() {
                   Makardha Bamasundari Institution
                 </span>
                 <div className="qualification_calender">
+                  <span className="qualification_grade">Grade: A</span><br/>
                   <i className="uil uil-calendar-alt"></i> 2019 - 2021
                 </div>
               </div>
@@ -122,59 +125,23 @@ export default function Qualification() {
                   Prasastha Durlav Chandra Saha Vidyapith
                 </span>
                 <div className="qualification_calender">
+                  <span className="qualification_grade">Grade: A</span><br/>
                   <i className="uil uil-calendar-alt"></i> 2013 - 2019
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* <div
-            className={
-              toggleState === 2
-                ? "qualification_content qualification_content-active"
-                : "qualification_content"
-            }
-          >
-            <div className="qualification_data">
-              <div>
-                <h3 className="qualification_title">Product Designer</h3>
-                <span className="qualification_subtitle">Microsoft Spain</span>
-                <div className="qualification_calender">
-                  <i className="uil uil-calendar-alt"></i> 2024 - Present
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification_rounder"></span>
-                <span className="qualification_line"></span>
-              </div>
-            </div>
 
             <div className="qualification_data">
-              <div></div>
-
               <div>
-                <span className="qualification_rounder"></span>
-                <span className="qualification_line"></span>
-              </div>
-
-              <div>
-                <h3 className="qualification_title">UX Designer</h3>
+                <h3 className="qualification_title">
+                  Primary Education
+                </h3>
                 <span className="qualification_subtitle">
-                  Apple Inc - Spain
+                  Prasastha Converted Junior Basic School
                 </span>
                 <div className="qualification_calender">
-                  <i className="uil uil-calendar-alt"></i> 2020 - 2021
-                </div>
-              </div>
-            </div>
-
-            <div className="qualification_data">
-              <div>
-                <h3 className="qualification_title">Web Designer</h3>
-                <span className="qualification_subtitle">Figma - Spain</span>
-                <div className="qualification_calender">
-                  <i className="uil uil-calendar-alt"></i> 2018 - 2020
+                  <span className="qualification_grade">Grade: A+</span><br/>
+                  <i className="uil uil-calendar-alt"></i> 2009 - 2012
                 </div>
               </div>
 
@@ -183,7 +150,10 @@ export default function Qualification() {
                 <span className="qualification_line"></span>
               </div>
             </div>
-          </div> */}
+
+          </div>
+
+
 
           <div
             className={
@@ -194,12 +164,13 @@ export default function Qualification() {
           >
             <div className="qualification_data">
               <div>
-                <h3 className="qualification_title">MERN Developer</h3>
+                <h3 className="qualification_title">Full Stack MERN Developer</h3>
                 <span className="qualification_subtitle">
                   Webgen Technologies Pvt. Ltd.
                 </span>
                 <div className="qualification_calender">
-                  <i className="uil uil-calendar-alt"></i> 2024 - Present
+                  <span className="qualification_grade">Job Type: Permanent</span><br/>
+                  <i className="uil uil-calendar-alt"></i> September 2025
                 </div>
               </div>
 
@@ -218,24 +189,26 @@ export default function Qualification() {
               </div>
 
               <div>
-                <h3 className="qualification_title">MCA (Pursuing)</h3>
+                <h3 className="qualification_title">Junior MERN Developer</h3>
                 <span className="qualification_subtitle">
-                  Seacom Engineering College
+                  Webgen Technologies Pvt. Ltd.
                 </span>
                 <div className="qualification_calender">
-                  <i className="uil uil-calendar-alt"></i> 2024 - Present
+                  <span className="qualification_grade">Job Type: Permanent</span><br/>
+                  <i className="uil uil-calendar-alt"></i> February 2025
                 </div>
               </div>
             </div>
 
             <div className="qualification_data">
               <div>
-                <h3 className="qualification_title">BCA</h3>
+                <h3 className="qualification_title">Junior MERN Developer</h3>
                 <span className="qualification_subtitle">
-                  Seacom Management College
+                  Webgen Technologies Pvt. Ltd.
                 </span>
                 <div className="qualification_calender">
-                  <i className="uil uil-calendar-alt"></i> 2021 - 2024
+                  <span className="qualification_grade">Job Type: Apprenticeship</span><br/>
+                  <i className="uil uil-calendar-alt"></i> August 2024
                 </div>
               </div>
 
