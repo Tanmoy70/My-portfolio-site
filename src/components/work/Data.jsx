@@ -1,11 +1,11 @@
-import Work1 from "../../assets/book_me.png";
-import Work2 from "../../assets/lat_club.png";
-import Work3 from "../../assets/pwr_com.png";
-import Work4 from "../../assets/gpt_good_news.png";
-import Work5 from "../../assets/HypeU.png";
-import Work6 from "../../assets/fine_desin.png";
+import Work1 from "../../assets/BOOKME.com.png";
+import Work2 from "../../assets/LatCLUB-New.png";
+import Work3 from "../../assets/PWR-RETIREMENTS-GROUP.png";
+import Work4 from "../../assets/GPT-GOOD-NEWS.png";
+import Work5 from "../../assets/HYPEU-NEW.png";
+import Work6 from "../../assets/FINE-DESIGN-GALLRY.png";
 import Work7 from "../../assets/royalty_events.png";
-import Work8 from "../../assets/pwr_us.png";
+import Work8 from "../../assets/PWR-RETIREMENT-GROUP-US.png";
 import Work9 from "../../assets/Emnipatiopr.png";
 
 export const projectsData = [
