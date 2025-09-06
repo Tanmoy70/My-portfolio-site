@@ -74,6 +74,26 @@
   height: 4rem;
 }
 
+.required_asterisk {
+  color: var(--text-color);
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+/* Error message styling */
+.error_message {
+  color:var(--text-color);
+  font-size: var(--smaller-font-size);
+  margin-top: 0.25rem;
+  display: block;
+  position: absolute;
+  bottom: -1.2rem;
+  left: 1.25rem;
+  background-color: var(--body-color);
+  padding: 0 0.25rem;
+}
+
+
 .contact_form-input {
   position: absolute;
   top: 0;
