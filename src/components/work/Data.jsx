@@ -41,7 +41,7 @@ export const projectsData = [
     id: 5,
     image: Work5,
     title: "HypeU (Frontend Development)",
-    link: "https://temp.hypeu.io/",
+    link: "https://hypeu.io/",
     catagory: "Web",
   },
   {
