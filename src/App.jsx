@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/header/Header";
-import Home from "./components/home/Home";
+import Home from "./components/home/Home"; 
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Services from "./components/services/Services";
@@ -25,7 +25,7 @@ function App() {
   if (loading) {
     return (
       <>
-        {/* Header Skeleton */}
+        {/* Code for Header Skeleton */}
         <header className="header" id="header">
           <nav className="nav container">
             <div className="nav_logo">
