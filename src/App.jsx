@@ -25,7 +25,7 @@ function App() {
   if (loading) {
     return (
       <>
-        {/* Code for Header Skeleton */}
+        {/* Code for header skeleton */}
         <header className="header" id="header">
           <nav className="nav container">
             <div className="nav_logo">
