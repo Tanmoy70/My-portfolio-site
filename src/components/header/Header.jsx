@@ -139,7 +139,7 @@ export default function Header() {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  // Handle scroll behavior
+  // Handle scroll behavior and section detection
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector(".header");
@@ -148,14 +148,55 @@ export default function Header() {
       } else {
         header.classList.remove("scroll_header");
       }
+
+      // Section detection logic
+      const sections = navItems.map(item => item.href.substring(1)); // Remove # from href
+      const scrollPosition = window.scrollY + 100; // Offset for better detection
+
+      let currentSection = "#home"; // Default
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sections[i]);
+        if (section && section.offsetTop <= scrollPosition) {
+          currentSection = `#${sections[i]}`;
+          break;
+        }
+      }
+
+      // Only update if the section has changed
+      setActiveNav(prevActive => {
+        if (prevActive !== currentSection) {
+          return currentSection;
+        }
+        return prevActive;
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Handle menu item click
-  const handleMenuClick = (href) => {
+  // Handle smooth scrolling when clicking menu items
+  const handleMenuClick = (href, event) => {
+    event.preventDefault();
+    
+    const targetId = href.substring(1); // Remove # from href
+    const targetSection = document.getElementById(targetId);
+    
+    if (targetSection) {
+      // Calculate header height for offset
+      const header = document.querySelector(".header");
+      const headerHeight = header ? header.offsetHeight : 70;
+      
+      const targetPosition = targetSection.offsetTop - headerHeight;
+      
+      // Smooth scroll to section
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+    
     setActiveNav(href);
     if (isMobile) {
       ShowMenu(false); 
@@ -179,6 +220,7 @@ export default function Header() {
           transition={{ delay: 0.2, type: "spring", stiffness: 300 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={(e) => handleMenuClick("#home", e)}
         >
           Tanmoy
         </motion.a>
@@ -200,12 +242,16 @@ export default function Header() {
                 >
                   <motion.a
                     href={item.href}
-                    onClick={() => handleMenuClick(item.href)}
+                    onClick={(e) => handleMenuClick(item.href, e)}
                     className={
                       activeNav === item.href
                         ? "nav_link active-link"
                         : "nav_link"
                     }
+                    animate={{
+                      scale: activeNav === item.href ? 1.05 : 1,
+                      transition: { type: "spring", stiffness: 300, damping: 20 }
+                    }}
                     whileHover={{ 
                       scale: 1.05,
                       transition: { type: "spring", stiffness: 400 }
@@ -265,13 +311,22 @@ export default function Header() {
                   >
                     <motion.a
                       href={item.href}
-                      onClick={() => handleMenuClick(item.href)}
+                      onClick={(e) => handleMenuClick(item.href, e)}
                       className={
                         activeNav === item.href
                           ? "nav_link active-link"
                           : "nav_link"
                       }
-                      whileHover={{ x: 10 }}
+                      animate={{
+                        scale: activeNav === item.href ? 1.05 : 1,
+                        x: activeNav === item.href ? 5 : 0,
+                        transition: { type: "spring", stiffness: 300, damping: 20 }
+                      }}
+                      whileHover={{ 
+                        x: 10,
+                        scale: 1.05,
+                        transition: { type: "spring", stiffness: 400 }
+                      }}
                       whileTap={{ scale: 0.95 }}
                     >
                       <motion.i 
