@@ -63,7 +63,7 @@ function App() {
           <HomeSkeleton />
         </main>
 
-        {/* Footer Skeleton */}
+        {/* Footer Skeleton as footer visible first */}
         <footer className="footer">
           <div className="footer_container container">
             <div style={{ textAlign: 'center', padding: '2rem 0' }}>
