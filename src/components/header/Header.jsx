@@ -292,7 +292,7 @@ export default function Header() {
           </motion.div>
         )}
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu Animation */}
         <AnimatePresence mode="wait">
           {Toggle && isMobile && (
             <motion.div
