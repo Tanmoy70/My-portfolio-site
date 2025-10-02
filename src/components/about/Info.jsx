@@ -13,7 +13,7 @@ export default function Info() {
 
         <h3 className="about_title">Completed</h3>
 
-        <span className="about_subtitle">9+ projects</span>
+        <span className="about_subtitle">15+ projects</span>
       </div>
       <div className="about_box">
         <i class="bx bx-support about_icon"></i>
