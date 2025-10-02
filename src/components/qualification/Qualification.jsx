@@ -54,7 +54,7 @@ export default function Qualification() {
                   Master's of Computer Application
                 </h3>
                 <span className="qualification_subtitle">
-                  Seacom Engineering Collge
+                  Seacom Engineering College (affiliated to MAKAUT)
                 </span>
                 <div className="qualification_calender">
                   <span className="qualification_grade">Grade: Pursuing</span><br/>
@@ -81,7 +81,7 @@ export default function Qualification() {
                   Bachelor of Computer Applications
                 </h3>
                 <span className="qualification_subtitle">
-                  Seacom Management Collge
+                  Seacom Management College (affiliated to MAKAUT)
                 </span>
                 <div className="qualification_calender">
                   <span className="qualification_grade">Grade: 8.80 CGPA</span><br/>
