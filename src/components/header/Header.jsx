@@ -12,7 +12,7 @@ const navItems = [
   { href: "#contact", icon: "uil-message", title: "Contact" },
 ];
 
-// Animation variants for the header
+// Animation variants 
 const headerVariants = {
   hidden: { 
     opacity: 0, 
