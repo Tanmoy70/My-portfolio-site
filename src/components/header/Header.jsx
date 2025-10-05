@@ -150,10 +150,10 @@ export default function Header() {
       }
 
       // Section detection logic
-      const sections = navItems.map(item => item.href.substring(1)); // Remove # from href
-      const scrollPosition = window.scrollY + 100; // Offset for better detection
+      const sections = navItems.map(item => item.href.substring(1)); 
+      const scrollPosition = window.scrollY + 100; 
 
-      let currentSection = "#home"; // Default
+      let currentSection = "#home"; 
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = document.getElementById(sections[i]);
@@ -180,7 +180,7 @@ export default function Header() {
   const handleMenuClick = (href, event) => {
     event.preventDefault();
     
-    const targetId = href.substring(1); // Remove # from href
+    const targetId = href.substring(1); 
     const targetSection = document.getElementById(targetId);
     
     if (targetSection) {
