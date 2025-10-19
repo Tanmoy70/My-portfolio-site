@@ -7,6 +7,7 @@ import Work6 from "../../assets/FINE-DESIGN-GALLRY.png";
 import Work7 from "../../assets/royalty_events.png";
 import Work8 from "../../assets/PWR-RETIREMENT-GROUP-US.png";
 import Work9 from "../../assets/Emnipatiopr.png";
+import Work10 from "../../assets/DailyTalk.png";
 
 export const projectsData = [
   {
@@ -72,6 +73,14 @@ export const projectsData = [
     link: "https://enmipatiopr.com/",
     catagory: "Wordpress",
   },
+  {
+    id: 10,
+    image: Work10,
+    title: "DailyTalk",
+    link: "https://github.com/Tanmoy70/English-Speaking-App",
+    catagory: "Web",
+  },
+ 
 ];
 
 export const projectsNav = [
