@@ -61,7 +61,7 @@ export default function Contact() {
       newErrors.email = 'Please enter a valid email address';
     }
 
-    // Message validation
+    // Message validation for contact form
     const message = formData.get('project').trim();
     if (!message) {
       newErrors.project = 'Message is required';
