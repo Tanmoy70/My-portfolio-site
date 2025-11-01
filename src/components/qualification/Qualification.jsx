@@ -57,7 +57,8 @@ export default function Qualification() {
                   Seacom Engineering College (affiliated to MAKAUT or WBUT)
                 </span>
                 <div className="qualification_calender">
-                  <span className="qualification_grade">Grade: Pursuing</span><br/>
+                  <span className="qualification_grade">Grade: Pursuing</span>
+                  <br />
                   <i className="uil uil-calendar-alt"></i> 2024 - 2026
                 </div>
               </div>
@@ -84,7 +85,8 @@ export default function Qualification() {
                   Seacom Management College (affiliated to MAKAUT or WBUT)
                 </span>
                 <div className="qualification_calender">
-                  <span className="qualification_grade">Grade: 8.80 CGPA</span><br/>
+                  <span className="qualification_grade">Grade: 8.80 CGPA</span>
+                  <br />
                   <i className="uil uil-calendar-alt"></i> 2021 - 2024
                 </div>
               </div>
@@ -99,7 +101,8 @@ export default function Qualification() {
                   Makardha Bamasundari Institution
                 </span>
                 <div className="qualification_calender">
-                  <span className="qualification_grade">Grade: A</span><br/>
+                  <span className="qualification_grade">Grade: A</span>
+                  <br />
                   <i className="uil uil-calendar-alt"></i> 2019 - 2021
                 </div>
               </div>
@@ -118,14 +121,13 @@ export default function Qualification() {
                 <span className="qualification_line"></span>
               </div>
               <div>
-                <h3 className="qualification_title">
-                  Secondary Certificate
-                </h3>
+                <h3 className="qualification_title">Secondary Certificate</h3>
                 <span className="qualification_subtitle">
                   Prasastha Durlav Chandra Saha Vidyapith
                 </span>
                 <div className="qualification_calender">
-                  <span className="qualification_grade">Grade: A</span><br/>
+                  <span className="qualification_grade">Grade: A</span>
+                  <br />
                   <i className="uil uil-calendar-alt"></i> 2013 - 2019
                 </div>
               </div>
@@ -133,14 +135,13 @@ export default function Qualification() {
 
             <div className="qualification_data">
               <div>
-                <h3 className="qualification_title">
-                  Primary Education
-                </h3>
+                <h3 className="qualification_title">Primary Education</h3>
                 <span className="qualification_subtitle">
                   Prasastha Converted Junior Basic School
                 </span>
                 <div className="qualification_calender">
-                  <span className="qualification_grade">Grade: A+</span><br/>
+                  <span className="qualification_grade">Grade: A+</span>
+                  <br />
                   <i className="uil uil-calendar-alt"></i> 2009 - 2012
                 </div>
               </div>
@@ -150,10 +151,7 @@ export default function Qualification() {
                 <span className="qualification_line"></span>
               </div>
             </div>
-
           </div>
-
-
 
           <div
             className={
@@ -169,7 +167,10 @@ export default function Qualification() {
                   Webgen Technologies Pvt. Ltd.
                 </span>
                 <div className="qualification_calender">
-                  <span className="qualification_grade">Job Type: Permanent</span><br/>
+                  <span className="qualification_grade">
+                    Job Type: Permanent
+                  </span>
+                  <br />
                   <i className="uil uil-calendar-alt"></i> September 2025
                 </div>
               </div>
@@ -194,7 +195,10 @@ export default function Qualification() {
                   Webgen Technologies Pvt. Ltd.
                 </span>
                 <div className="qualification_calender">
-                  <span className="qualification_grade">Job Type: Permanent</span><br/>
+                  <span className="qualification_grade">
+                    Job Type: Permanent
+                  </span>
+                  <br />
                   <i className="uil uil-calendar-alt"></i> February 2025
                 </div>
               </div>
@@ -207,7 +211,10 @@ export default function Qualification() {
                   Webgen Technologies Pvt. Ltd.
                 </span>
                 <div className="qualification_calender">
-                  <span className="qualification_grade">Job Type: Apprenticeship</span><br/>
+                  <span className="qualification_grade">
+                    Job Type: Apprenticeship
+                  </span>
+                  <br />
                   <i className="uil uil-calendar-alt"></i> August 2024
                 </div>
               </div>
@@ -217,6 +224,58 @@ export default function Qualification() {
                 <span className="qualification_line"></span>
               </div>
             </div>
+
+            <div className="qualification_data">
+              <div></div>
+
+              <div>
+                <span className="qualification_rounder"></span>
+                <span className="qualification_line"></span>
+              </div>
+
+              <div>
+                <h3 className="qualification_title">
+                  Team Lead (Major Project)
+                </h3>
+                <span className="qualification_subtitle">
+                  Seacom Management College
+                </span>
+                <div className="qualification_calender">
+                  <span className="qualification_grade">
+                    Project: <strong>BookMe.com (Enhanced Version)</strong> —
+                    Added new features, improved UI, and better user experience
+                  </span>
+                  <br />
+                  <i className="uil uil-calendar-alt"></i> 6th Semester (BCA
+                  Batch: 2021–2024)
+                </div>
+              </div>
+            </div>
+
+            <div className="qualification_data">
+              <div>
+                <h3 className="qualification_title">
+                  Team Lead (Minor Project)
+                </h3>
+                <span className="qualification_subtitle">
+                  Seacom Management College
+                </span>
+                <div className="qualification_calender">
+                  <span className="qualification_grade">
+                    Project: <strong>BookMe.com</strong> — A MERN Stack Web App
+                  </span>
+                  <br />
+                  <i className="uil uil-calendar-alt"></i> 5th Semester (BCA
+                  Batch: 2021–2024)
+                </div>
+              </div>
+
+              <div>
+                <span className="qualification_rounder"></span>
+                <span className="qualification_line"></span>
+              </div>
+            </div> 
+
           </div>
         </div>
       </div>
