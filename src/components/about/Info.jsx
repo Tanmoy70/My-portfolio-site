@@ -6,7 +6,7 @@ export default function Info() {
 
         <h3 className="about_title">Experience</h3>
 
-        <span className="about_subtitle">1+ year working</span>
+        <span className="about_subtitle">1.5+ years working</span>
       </div>
       <div className="about_box">
         <i class="bx bx-briefcase-alt about_icon "></i>
