@@ -15,7 +15,7 @@ export default function About() {
           <Info />
 
           <p className="about_description">
-            I am a dedicated MERN stack developer with 1+ years of industry experience, currently working at Webgen Technologies Pvt. Ltd. I have successfully delivered 9+ projects, showcasing a strong commitment to quality, efficiency, and client satisfaction. While my core expertise lies in building robust, scalable web applications using the MERN stack, I also work with WordPress when required and actively learn new technologies to better support my team and deliver impactful solutions.
+            I am a dedicated MERN stack developer with 1.5+ years of industry experience, currently working at Webgen Technologies Pvt. Ltd. I have successfully delivered 10+ projects, showcasing a strong commitment to quality, efficiency, and client satisfaction. While my core expertise lies in building robust, scalable web applications using the MERN stack, I also work with WordPress when required and actively learn new technologies to better support my team and deliver impactful solutions.
           </p>
 
           <a download="" href={CV} className="button button--flex">

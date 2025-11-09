@@ -47,7 +47,7 @@ export default function Data() {
       </div>
 
       <p className="home_description">
-        MERN stack developer with 1+ years of hands-on experience building dynamic, responsive web applications. Passionate about crafting efficient, scalable solutions while continuously expanding technical expertise.
+        MERN stack developer with 1.5+ years of hands-on experience building dynamic, responsive web applications. Passionate about crafting efficient, scalable solutions while continuously expanding technical expertise.
       </p>
 
       <a href="#contact" className="button button--flex">
