@@ -161,6 +161,29 @@ export default function Qualification() {
             }
           >
             <div className="qualification_data">
+              <div></div>
+
+              <div>
+                <span className="qualification_rounder"></span>
+                <span className="qualification_line"></span>
+              </div>
+
+              <div>
+                <h3 className="qualification_title">Team Lead (Minor Project)</h3>
+                <span className="qualification_subtitle">
+                  Seacom Engineering College
+                </span>
+                <div className="qualification_calender">
+                  <span className="qualification_grade">
+                     Project: <strong>DailyTalk</strong> — A friendly app that helps people learn English speaking by talking with strangers around the world.
+                  </span>
+                  <br />
+                  <i className="uil uil-calendar-alt"></i> 3rd Semester, (MCA 2024–2026 Batch)
+                </div>
+              </div>
+            </div>
+
+            <div className="qualification_data">
               <div>
                 <h3 className="qualification_title">MERN Developer</h3>
                 <span className="qualification_subtitle">
@@ -274,8 +297,7 @@ export default function Qualification() {
                 <span className="qualification_rounder"></span>
                 <span className="qualification_line"></span>
               </div>
-            </div> 
-
+            </div>
           </div>
         </div>
       </div>
