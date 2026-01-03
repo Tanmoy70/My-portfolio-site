@@ -68,7 +68,7 @@ export default function Footer() {
           </a>
         </div>
         <span className="footer_copy">
-          &#169;2025 TanmoyKanrar. All rights reserved
+          &#169;2026 TanmoyKanrar. All rights reserved
         </span>
       </div>
     </footer>
