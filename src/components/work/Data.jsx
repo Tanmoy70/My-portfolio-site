@@ -8,6 +8,7 @@ import Work7 from "../../assets/royalty_events.png";
 import Work8 from "../../assets/PWR-RETIREMENT-GROUP-US.png";
 import Work9 from "../../assets/Emnipatiopr.png";
 import Work10 from "../../assets/DailyTalk.png";
+import Work11 from "../../assets/PWR-mobile-app.png";
 
 export const projectsData = [
   {
@@ -79,6 +80,13 @@ export const projectsData = [
     title: "DailyTalk",
     link: "https://github.com/Tanmoy70/English-Speaking-App",
     catagory: "Web",
+  },
+  {
+    id: 11,
+    image: Work11,
+    title: "PWR (Backend Development)",
+    link: "https://play.google.com/store/apps/details?id=com.wgt.pwr_retirement_group&hl=en_IN",
+    catagory: "app",
   },
  
 ];
