@@ -7,6 +7,7 @@ import Certificate4 from "./../../assets/ljnkedin-communication-certificate.jpeg
 import Certificate5 from "./../../assets/be10x_certificate.jpeg";
 import Certificate6 from "./../../assets/skill_nation_certificate.jpeg";
 import Certificate7 from "./../../assets/seconium_certificate.jpeg";
+import Certificate8 from "./../../assets/NOC26CS37S75870085404978685_page-0001.jpg";
 
 import "./services.css";
 
@@ -20,9 +21,89 @@ export default function Services() {
   return (
     <section className="services section" id="certificates">
       <h2 className="section_title">Certificates</h2>
-      <span className="section_subtitle">What I achieve</span>
+      <span className="section_subtitle">What I Achieve</span>
 
       <div className="services_container container grid">
+
+          <div className="services_content">
+          <div>
+            <img
+              src={Certificate8}
+              alt="Product Designer"
+              className="services_img"
+            />
+            {/* <i className="uil uil-web-grid services_icon"></i> */}
+            <h3 className="services_title">
+              Introduction to Internet of Things<br />
+              <span className="services_title-line">from NPTEL</span>
+            </h3>
+          </div>
+          <span className="services_button">
+            {" "}
+            {/*onClick={() => toggleTab(1)*/}
+            <a
+              href="https://nptel.ac.in/noc/E_Certificate/NOC26CS37S75870085404978685"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              View Now
+            </a>
+            <i className="uil uil-arrow-right services_button-icon"></i>
+          </span>
+          <div
+            className={
+              toggleState === 1
+                ? "services_modal active_modal"
+                : "services_modal"
+            }
+          >
+            <div className="services_model-content">
+              <i
+                onClick={() => toggleTab(0)}
+                className="uil uil-times services_model-close"
+              ></i>
+              <h3 className="services_model-title">Product Designer</h3>
+              <p className="services_modal-description">
+                Services with more than 3 years of experience. Providing quality
+                work to clients and companies.
+              </p>
+              <ul className="services_modal-services grid">
+                <li className="services_modal-service">
+                  <i className="uil uil-check-circle services_modal-icon"></i>
+                  <p className="servives_modal-info">
+                    I develop the user interface.
+                  </p>
+                </li>
+
+                <li className="services_modal-service">
+                  <i className="uil uil-check-circle services_modal-icon"></i>
+                  <p className="servives_modal-info">Web page development</p>
+                </li>
+
+                <li className="services_modal-service">
+                  <i className="uil uil-check-circle services_modal-icon"></i>
+                  <p className="servives_modal-info">
+                    I create ux element interactions.
+                  </p>
+                </li>
+
+                <li className="services_modal-service">
+                  <i className="uil uil-check-circle services_modal-icon"></i>
+                  <p className="servives_modal-info">
+                    I position your company brand..
+                  </p>
+                </li>
+
+                <li className="services_modal-service">
+                  <i className="uil uil-check-circle services_modal-icon"></i>
+                  <p className="servives_modal-info">
+                    Design and mockups of products for companies.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div className="services_content">
           <div>
             <img
@@ -357,7 +438,7 @@ export default function Services() {
             {" "}
             {/*onClick={() => toggleTab(3)}*/}
             <a
-              href=""
+              href="https://www.linkedin.com/in/tanmoykanrar/details/certifications/"
               style={{ color: "inherit", textDecoration: "none" }}
             >
               View Now
@@ -436,7 +517,7 @@ export default function Services() {
             {" "}
             {/*onClick={() => toggleTab(3)}*/}
             <a
-              href=""
+              href="https://www.linkedin.com/in/tanmoykanrar/details/certifications/"
               style={{ color: "inherit", textDecoration: "none" }}
             >
               View Now
@@ -507,7 +588,7 @@ export default function Services() {
             />
             {/* <i className="uil uil-edit services_icon"></i> */}
             <h3 className="services_title">
-              <b>JOURNEY OF TRANSFORMATION FROM MANAGEMENT STUDENT TO CORPORATION PROFESSIONALS:</b> Challenges And Opportunities<br />
+              <b>JOURNEY OF TRANSFORMATION</b><br />
               <span className="services_title-line">from Seacom Management College</span>
             </h3>
           </div>
@@ -515,7 +596,7 @@ export default function Services() {
             {" "}
             {/*onClick={() => toggleTab(3)}*/}
             <a
-              href=""
+              href="https://www.linkedin.com/in/tanmoykanrar/details/certifications"
               style={{ color: "inherit", textDecoration: "none" }}
             >
               View Now

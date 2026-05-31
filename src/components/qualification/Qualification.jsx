@@ -51,7 +51,7 @@ export default function Qualification() {
             <div className="qualification_data">
               <div>
                 <h3 className="qualification_title">
-                  Master's of Computer Application
+                  Master's of Computer Application(M.C.A)
                 </h3>
                 <span className="qualification_subtitle">
                   Seacom Engineering College (affiliated to MAKAUT or WBUT)
@@ -79,7 +79,7 @@ export default function Qualification() {
 
               <div>
                 <h3 className="qualification_title">
-                  Bachelor of Computer Applications
+                  Bachelor of Computer Applications(B.C.A)
                 </h3>
                 <span className="qualification_subtitle">
                   Seacom Management College (affiliated to MAKAUT or WBUT)
