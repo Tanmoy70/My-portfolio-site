@@ -9,6 +9,8 @@ import Work8 from "../../assets/PWR-RETIREMENT-GROUP-US.png";
 import Work9 from "../../assets/Emnipatiopr.png";
 import Work10 from "../../assets/DailyTalk.png";
 import Work11 from "../../assets/PWR-mobile-app.png";
+import Work12 from "../../assets/prime-pulse-rx.png";
+import Work13 from "../../assets/fem-haven-rx.png";
 
 export const projectsData = [
   {
@@ -86,6 +88,20 @@ export const projectsData = [
     image: Work11,
     title: "PWR (Backend Development)",
     link: "https://play.google.com/store/apps/details?id=com.wgt.pwr_retirement_group&hl=en_IN",
+    catagory: "app",
+  },
+    {
+    id: 12,
+    image: Work12,
+    title: "Prime Pulse Rx (Backend Development)",
+    link: "https://play.google.com/store/apps/details?id=com.wgt.rxPrimepulse&hl=en_IN",
+    catagory: "app",
+  },
+    {
+    id: 13,
+    image: Work13,
+    title: "Fem Haven Rx (Backend Development)",
+    link: "https://play.google.com/store/apps/details?id=com.wgt.rxFemHaven&hl=en_IN",
     catagory: "app",
   },
  
