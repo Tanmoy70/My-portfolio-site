@@ -79,7 +79,8 @@ export default function Qualification() {
 
               <div>
                 <h3 className="qualification_title">
-                  Bachelor of Computer Applications(B.C.A)
+                    Bachelor of Computer Applications
+                    <span className="bca">(B.C.A)</span>
                 </h3>
                 <span className="qualification_subtitle">
                   Seacom Management College (affiliated to MAKAUT or WBUT)
