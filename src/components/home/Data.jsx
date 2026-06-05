@@ -8,6 +8,7 @@ const words = [
   "MongoDB",
   "Express.js",
   "TypeScript",
+  "Next.js",
   "Docker",
   "Stripe",
   'Socket.io',
